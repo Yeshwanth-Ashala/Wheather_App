@@ -1,34 +1,88 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  margin-right: 10px;
+  width: 300px;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
 .card {
-    height: 300px;
-    width: 500px;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-  }
-  .weather {
-    height: 150px;
-    width: 200px;
-    background-color: antiquewhite;
-    text-align: center;
-  }
-  .time {
-    height: 150px;
-    width: 200px;
-    background-color: antiquewhite;
-    text-align: center;
-  }
-  h3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #city {
-    height: 30px;
-    width: 300px;
-    border-radius: 10px;
-  }
-  .Form {
-    display: inline-block;
-  }
-  
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.card .weather {
+  margin-bottom: 15px;
+}
+
+.card .weather h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .weather h3 span {
+  margin-left: 10px;
+}
+
+.card .time {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+p[style="color: red"] {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
